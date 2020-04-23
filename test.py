@@ -35,7 +35,7 @@ def startMenu():
         mainMenu()                                                                              
     if userChoice == 3:                                                                         
         clr()                                                                                   
-        print("Welcome To Key Safe".center(60," ")+"\n"+"-"*60+"\n"+"\n\tKey Safe is a password storing programme developed\n"+"\tin Python. In this programme I added functionality\n"+"\tto View/Add/Change/Remove Apps and their\n"+"\tpasswords.  I have tried to make this programme\n"+"\teasy to use.\n"+"\n\tIn the numbered Menus, simply type the number of\n"+"\tthe desired function you want to access.\n"+"\n\t- Josh")
+        print("Welcome To Key Safe".center(60," ")+"\n"+"-"*60+"\n"+"\n\tKey Safe is a password storing programme developed\n"+"\tin Python. In this programme I added functionality\n"+"\tto View/Add/Change/Remove Apps and their\n"+"\tpasswords.  I have tried to make this programme\n"+"\teasy to use.\n"+"\n\tIn the numbered Menus, simply type the number of\n"+"\tthe desired function you want to access.\n"+"\n\t- Bjorn")
         input("\nPress ENTER to continue...")                                                   
         startMenu()                                                                             
     if userChoice == 4:                                                                         
@@ -49,12 +49,12 @@ def encrypt(txt):
         if ord(i) != c:                                                                         
             b = chr(c)                                                                          
             encrypted += b                                                                      
-    encrypted=str(encrypted.replace("\\","
+    encrypted=str(encrypted.replace("\\",""))
     encrypted=str(encrypted.replace("|","%"))                                                   
     return encrypted                                                                            
 
 def decrypt(txt):                                                                               
-    txt.replace('
+    txt.replace('')
     txt.replace('%','|')                                                                        
     decrypted = ''                                                                              
     for x in txt:                                                                               
